@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1782742532" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/arm_processor.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1782762179" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/arm_processor.dcp">
+  <File Type="PA-TCL" Name="arm_processor.tcl"/>
   <File Type="REPORTS-TCL" Name="arm_processor_reports.tcl"/>
+  <File Type="RDS-RDS" Name="arm_processor.vds"/>
+  <File Type="RDS-PROPCONSTRS" Name="arm_processor_drc_synth.rpt"/>
   <File Type="RDS-UTIL" Name="arm_processor_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="arm_processor_utilization_synth.pb"/>
-  <File Type="PA-TCL" Name="arm_processor.tcl"/>
-  <File Type="RDS-RDS" Name="arm_processor.vds"/>
   <File Type="RDS-DCP" Name="arm_processor.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="arm_processor_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="arm_processor_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/Sram.v">
@@ -57,6 +60,13 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PPRDIR/../files_communication protocols/i2c_master.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PPRDIR/../files_pipeline/id_ex_reg.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -78,6 +88,13 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PPRDIR/../files_communication protocols/io_bus.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PPRDIR/../files_pipeline/mem_wb_reg.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -93,6 +110,27 @@
       </FileInfo>
     </File>
     <File Path="$PPRDIR/../files/register_file.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../files_communication protocols/spi_master.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../files_communication protocols/uart_rx.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../files_communication protocols/uart_tx.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>

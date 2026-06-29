@@ -3,8 +3,8 @@
 # SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
 # IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
 # SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-# Start of session at: Mon Jun 29 19:45:36 2026
-# Process ID         : 27652
+# Start of session at: Tue Jun 30 01:13:02 2026
+# Process ID         : 8024
 # Current directory  : D:/vivadi_projects/ARM_CPU/ARM_CPU.runs/synth_1
 # Command line       : vivado.exe -log arm_processor.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source arm_processor.tcl
 # Log file           : D:/vivadi_projects/ARM_CPU/ARM_CPU.runs/synth_1/arm_processor.vds
@@ -17,12 +17,12 @@
 # CPU Physical cores : 8
 # CPU Logical cores  : 12
 # Host memory        : 16802 MB
-# Swap memory        : 10200 MB
-# Total Virtual      : 27003 MB
-# Available Virtual  : 1395 MB
+# Swap memory        : 11284 MB
+# Total Virtual      : 28086 MB
+# Available Virtual  : 3339 MB
 #-----------------------------------------------------------
 source arm_processor.tcl -notrace
-create_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 542.512 ; gain = 222.645
+create_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 541.867 ; gain = 221.188
 Command: read_checkpoint -auto_incremental -incremental D:/vivadi_projects/ARM_CPU/ARM_CPU.srcs/utils_1/imports/synth_1/arm_processor.dcp
 INFO: [Vivado 12-5825] Read reference checkpoint from D:/vivadi_projects/ARM_CPU/ARM_CPU.srcs/utils_1/imports/synth_1/arm_processor.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
@@ -34,11 +34,11 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 30456
+INFO: [Synth 8-7075] Helper process launched with PID 5108
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1087.039 ; gain = 531.359
+Starting Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1089.066 ; gain = 536.277
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'arm_processor' [D:/vivadi_projects/files/arm_processor.v:26]
+INFO: [Synth 8-6157] synthesizing module 'arm_processor' [D:/vivadi_projects/files/arm_processor.v:25]
 INFO: [Synth 8-6157] synthesizing module 'fetch_stage' [D:/vivadi_projects/files/fetch_stage.v:7]
 INFO: [Synth 8-6157] synthesizing module 'program_counter' [D:/vivadi_projects/files/program_counter.v:8]
 INFO: [Synth 8-6155] done synthesizing module 'program_counter' (0#1) [D:/vivadi_projects/files/program_counter.v:8]
@@ -64,14 +64,32 @@ INFO: [Synth 8-6157] synthesizing module 'ex_mem_reg' [D:/vivadi_projects/files_
 INFO: [Synth 8-6155] done synthesizing module 'ex_mem_reg' (0#1) [D:/vivadi_projects/files_pipeline/ex_mem_reg.v:9]
 INFO: [Synth 8-6157] synthesizing module 'sram' [D:/vivadi_projects/ARM_CPU/ARM_CPU.srcs/sources_1/new/Sram.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'sram' (0#1) [D:/vivadi_projects/ARM_CPU/ARM_CPU.srcs/sources_1/new/Sram.v:23]
+INFO: [Synth 8-6157] synthesizing module 'io_bus' [D:/vivadi_projects/files_communication protocols/io_bus.v:31]
+	Parameter BAUD_DIV bound to: 434 - type: integer 
+	Parameter SCK_DIV bound to: 25 - type: integer 
+	Parameter I2C_DIV bound to: 125 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'uart_tx' [D:/vivadi_projects/files_communication protocols/uart_tx.v:21]
+	Parameter BAUD_DIV bound to: 434 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (0#1) [D:/vivadi_projects/files_communication protocols/uart_tx.v:21]
+INFO: [Synth 8-6157] synthesizing module 'uart_rx' [D:/vivadi_projects/files_communication protocols/uart_rx.v:17]
+	Parameter BAUD_DIV bound to: 434 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (0#1) [D:/vivadi_projects/files_communication protocols/uart_rx.v:17]
+INFO: [Synth 8-6157] synthesizing module 'spi_master' [D:/vivadi_projects/files_communication protocols/spi_master.v:23]
+	Parameter SCK_DIV bound to: 25 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'spi_master' (0#1) [D:/vivadi_projects/files_communication protocols/spi_master.v:23]
+INFO: [Synth 8-6157] synthesizing module 'i2c_master' [D:/vivadi_projects/files_communication protocols/i2c_master.v:26]
+	Parameter CLK_DIV bound to: 125 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'i2c_master' (0#1) [D:/vivadi_projects/files_communication protocols/i2c_master.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'io_bus' (0#1) [D:/vivadi_projects/files_communication protocols/io_bus.v:31]
 INFO: [Synth 8-6157] synthesizing module 'mem_wb_reg' [D:/vivadi_projects/files_pipeline/mem_wb_reg.v:7]
 INFO: [Synth 8-6155] done synthesizing module 'mem_wb_reg' (0#1) [D:/vivadi_projects/files_pipeline/mem_wb_reg.v:7]
-INFO: [Synth 8-6155] done synthesizing module 'arm_processor' (0#1) [D:/vivadi_projects/files/arm_processor.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'arm_processor' (0#1) [D:/vivadi_projects/files/arm_processor.v:25]
+WARNING: [Synth 8-6014] Unused sequential element rw_mode_reg was removed.  [D:/vivadi_projects/files_communication protocols/i2c_master.v:78]
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1209.082 ; gain = 653.402
+Finished Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1218.082 ; gain = 665.293
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1209.082 ; gain = 653.402
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1218.082 ; gain = 665.293
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -79,10 +97,46 @@ Start Loading Part and Timing Information
 Loading part: xc7a35tcpg236-1
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1209.082 ; gain = 653.402
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1218.082 ; gain = 665.293
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_tx'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_rx'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'i2c_master'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+                   START |                               01 |                               01
+                    DATA |                               10 |                               10
+                    STOP |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'uart_tx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+                   START |                               01 |                               01
+                    DATA |                               10 |                               10
+                    STOP |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'uart_rx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                       0000000001 |                             0000
+                  START1 |                       0000000010 |                             0001
+                  START2 |                       0000000100 |                             0010
+                SEND_BIT |                       0000001000 |                             0011
+                SCL_HIGH |                       0000010000 |                             0100
+                 SCL_LOW |                       0000100000 |                             0101
+                ACK_READ |                       0001000000 |                             0110
+                 ACK_LOW |                       0010000000 |                             0111
+                   STOP1 |                       0100000000 |                             1000
+                   STOP2 |                       1000000000 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'i2c_master'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1209.082 ; gain = 653.402
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1229.609 ; gain = 676.820
 ---------------------------------------------------------------------------------
 No constraint files found.
 ---------------------------------------------------------------------------------
@@ -90,27 +144,42 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
+	   2 Input   16 Bit       Adders := 2     
 	   2 Input    9 Bit       Adders := 1     
 	   3 Input    9 Bit       Adders := 1     
-	   2 Input    8 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 3     
+	   2 Input    4 Bit       Adders := 4     
 +---XORs : 
 	   2 Input      8 Bit         XORs := 1     
 +---Registers : 
-	               16 Bit    Registers := 1     
-	                8 Bit    Registers := 9     
+	               16 Bit    Registers := 3     
+	                8 Bit    Registers := 26    
+	                4 Bit    Registers := 4     
 	                3 Bit    Registers := 7     
-	                1 Bit    Registers := 21    
+	                1 Bit    Registers := 41    
 +---RAMs : 
 	               2K Bit	(256 X 8 bit)          RAMs := 1     
 	               64 Bit	(8 X 8 bit)          RAMs := 1     
 +---Muxes : 
 	 257 Input   16 Bit        Muxes := 1     
-	   2 Input    8 Bit        Muxes := 6     
+	   4 Input   16 Bit        Muxes := 2     
+	  10 Input   10 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 3     
+	   2 Input    8 Bit        Muxes := 14    
+	   4 Input    8 Bit        Muxes := 2     
+	  10 Input    8 Bit        Muxes := 1     
 	   3 Input    8 Bit        Muxes := 2     
+	   3 Input    5 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 2     
+	  10 Input    4 Bit        Muxes := 1     
 	  16 Input    3 Bit        Muxes := 1     
-	   2 Input    2 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 3     
+	   4 Input    2 Bit        Muxes := 2     
 	  16 Input    1 Bit        Muxes := 8     
-	   8 Input    1 Bit        Muxes := 1     
+	   8 Input    1 Bit        Muxes := 10    
+	   2 Input    1 Bit        Muxes := 31    
+	   4 Input    1 Bit        Muxes := 11    
+	  10 Input    1 Bit        Muxes := 10    
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -127,21 +196,24 @@ No constraint files found.
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (IOBUS/U_RX/FSM_sequential_state_reg[1]) is unused and will be removed from module arm_processor.
+WARNING: [Synth 8-3332] Sequential element (IOBUS/U_RX/FSM_sequential_state_reg[0]) is unused and will be removed from module arm_processor.
+WARNING: [Synth 8-3332] Sequential element (IOBUS/U_I2C/FSM_onehot_state_reg[8]) is unused and will be removed from module arm_processor.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1372.730 ; gain = 817.051
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1415.555 ; gain = 862.766
 ---------------------------------------------------------------------------------
 No constraint files found.
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1388.539 ; gain = 832.859
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1415.555 ; gain = 862.766
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1388.539 ; gain = 832.859
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1415.555 ; gain = 862.766
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -159,37 +231,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1622.125 ; gain = 1066.445
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1644.125 ; gain = 1091.336
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1622.125 ; gain = 1066.445
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1644.125 ; gain = 1091.336
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1622.125 ; gain = 1066.445
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1644.125 ; gain = 1091.336
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1622.125 ; gain = 1066.445
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1644.125 ; gain = 1091.336
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1622.125 ; gain = 1066.445
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1644.125 ; gain = 1091.336
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1622.125 ; gain = 1066.445
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1644.125 ; gain = 1091.336
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -202,36 +274,55 @@ Report BlackBoxes:
 +-+--------------+----------+
 
 Report Cell Usage: 
-+-+-----+------+
-| |Cell |Count |
-+-+-----+------+
-+-+-----+------+
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     4|
+|3     |LUT1   |    23|
+|4     |LUT2   |    20|
+|5     |LUT3   |     8|
+|6     |LUT4   |    13|
+|7     |LUT5   |    10|
+|8     |LUT6   |     6|
+|9     |FDRE   |    41|
+|10    |FDSE   |     3|
+|11    |IBUF   |     2|
+|12    |OBUF   |     5|
+|13    |OBUFT  |     9|
++------+-------+------+
 
 Report Instance Areas: 
-+------+---------+-------+------+
-|      |Instance |Module |Cells |
-+------+---------+-------+------+
-|1     |top      |       |     0|
-+------+---------+-------+------+
++------+----------+-----------+------+
+|      |Instance  |Module     |Cells |
++------+----------+-----------+------+
+|1     |top       |           |   145|
+|2     |  IOBUS   |io_bus     |   120|
+|3     |    U_I2C |i2c_master |    46|
+|4     |    U_TX  |uart_tx    |    74|
++------+----------+-----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1622.125 ; gain = 1066.445
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1644.125 ; gain = 1091.336
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1622.125 ; gain = 1066.445
-Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1622.125 ; gain = 1066.445
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1644.125 ; gain = 1091.336
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1644.125 ; gain = 1091.336
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1624.117 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1659.160 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1748.297 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1769.445 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: 978d3217
+Synth Design complete | Checksum: fbbf5073
 INFO: [Common 17-83] Releasing license: Synthesis
-43 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+61 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 1748.297 ; gain = 1201.406
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 1769.445 ; gain = 1222.500
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1769.445 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'D:/vivadi_projects/ARM_CPU/ARM_CPU.runs/synth_1/arm_processor.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file arm_processor_utilization_synth.rpt -pb arm_processor_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Jun 29 19:46:29 2026...
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 30 01:13:45 2026...
