@@ -1,0 +1,50 @@
+Time resolution is 1 ps
+
+========================================
+  ARM 8-bit Pipelined Processor TB
+  Reset released @ 46000 ns
+========================================
+
+[55000 ns] IF:PC=0 | ID:op=0000 rd=0 | EX:alu=0 fwdA=00 fwdB=00 | WB:rd=0 wb=0 rw=0 | stall=0
+[65000 ns] IF:PC=1 | ID:op=0001 rd=1 | EX:alu=0 fwdA=00 fwdB=00 | WB:rd=0 wb=0 rw=0 | stall=0
+[75000 ns] IF:PC=2 | ID:op=0001 rd=2 | EX:alu=5 fwdA=00 fwdB=00 | WB:rd=0 wb=0 rw=0 | stall=0
+[85000 ns] IF:PC=3 | ID:op=0000 rd=3 | EX:alu=3 fwdA=00 fwdB=00 | WB:rd=0 wb=0 rw=1 | stall=0
+[95000 ns] IF:PC=4 | ID:op=0010 rd=4 | EX:alu=8 fwdA=01 fwdB=10 | WB:rd=1 wb=5 rw=1 | stall=0
+[105000 ns] IF:PC=5 | ID:op=0011 rd=5 | EX:alu=5 fwdA=10 fwdB=01 | WB:rd=2 wb=3 rw=1 | stall=0
+[115000 ns] IF:PC=6 | ID:op=0100 rd=5 | EX:alu=0 fwdA=01 fwdB=00 | WB:rd=3 wb=8 rw=1 | stall=0
+[125000 ns] IF:PC=7 | ID:op=0101 rd=6 | EX:alu=3 fwdA=00 fwdB=00 | WB:rd=4 wb=5 rw=1 | stall=0
+[135000 ns] IF:PC=8 | ID:op=0000 rd=0 | EX:alu=11 fwdA=00 fwdB=00 | WB:rd=5 wb=0 rw=1 | stall=0
+[145000 ns] IF:PC=9 | ID:op=0000 rd=0 | EX:alu=0 fwdA=00 fwdB=00 | WB:rd=5 wb=3 rw=1 | stall=0
+[155000 ns] IF:PC=10 | ID:op=0000 rd=0 | EX:alu=0 fwdA=00 fwdB=00 | WB:rd=6 wb=11 rw=1 | stall=0
+[165000 ns] IF:PC=11 | ID:op=0000 rd=0 | EX:alu=0 fwdA=00 fwdB=00 | WB:rd=0 wb=0 rw=1 | stall=0
+[175000 ns] IF:PC=12 | ID:op=0000 rd=0 | EX:alu=0 fwdA=00 fwdB=00 | WB:rd=0 wb=0 rw=1 | stall=0
+[185000 ns] IF:PC=13 | ID:op=0000 rd=0 | EX:alu=0 fwdA=00 fwdB=00 | WB:rd=0 wb=0 rw=1 | stall=0
+[195000 ns] IF:PC=14 | ID:op=0000 rd=0 | EX:alu=0 fwdA=00 fwdB=00 | WB:rd=0 wb=0 rw=1 | stall=0
+[205000 ns] IF:PC=15 | ID:op=0000 rd=0 | EX:alu=0 fwdA=00 fwdB=00 | WB:rd=0 wb=0 rw=1 | stall=0
+[215000 ns] IF:PC=16 | ID:op=0000 rd=0 | EX:alu=0 fwdA=00 fwdB=00 | WB:rd=0 wb=0 rw=1 | stall=0
+[225000 ns] IF:PC=17 | ID:op=0000 rd=0 | EX:alu=0 fwdA=00 fwdB=00 | WB:rd=0 wb=0 rw=1 | stall=0
+[235000 ns] IF:PC=18 | ID:op=0000 rd=0 | EX:alu=0 fwdA=00 fwdB=00 | WB:rd=0 wb=0 rw=1 | stall=0
+[245000 ns] IF:PC=19 | ID:op=0000 rd=0 | EX:alu=0 fwdA=00 fwdB=00 | WB:rd=0 wb=0 rw=1 | stall=0
+[255000 ns] IF:PC=20 | ID:op=0000 rd=0 | EX:alu=0 fwdA=00 fwdB=00 | WB:rd=0 wb=0 rw=1 | stall=0
+[265000 ns] IF:PC=21 | ID:op=0000 rd=0 | EX:alu=0 fwdA=00 fwdB=00 | WB:rd=0 wb=0 rw=1 | stall=0
+[275000 ns] IF:PC=22 | ID:op=0000 rd=0 | EX:alu=0 fwdA=00 fwdB=00 | WB:rd=0 wb=0 rw=1 | stall=0
+[285000 ns] IF:PC=23 | ID:op=0000 rd=0 | EX:alu=0 fwdA=00 fwdB=00 | WB:rd=0 wb=0 rw=1 | stall=0
+[295000 ns] IF:PC=24 | ID:op=0000 rd=0 | EX:alu=0 fwdA=00 fwdB=00 | WB:rd=0 wb=0 rw=1 | stall=0
+[305000 ns] IF:PC=25 | ID:op=0000 rd=0 | EX:alu=0 fwdA=00 fwdB=00 | WB:rd=0 wb=0 rw=1 | stall=0
+[315000 ns] IF:PC=26 | ID:op=0000 rd=0 | EX:alu=0 fwdA=00 fwdB=00 | WB:rd=0 wb=0 rw=1 | stall=0
+[325000 ns] IF:PC=27 | ID:op=0000 rd=0 | EX:alu=0 fwdA=00 fwdB=00 | WB:rd=0 wb=0 rw=1 | stall=0
+[335000 ns] IF:PC=28 | ID:op=0000 rd=0 | EX:alu=0 fwdA=00 fwdB=00 | WB:rd=0 wb=0 rw=1 | stall=0
+[345000 ns] IF:PC=29 | ID:op=0000 rd=0 | EX:alu=0 fwdA=00 fwdB=00 | WB:rd=0 wb=0 rw=1 | stall=0
+--- Register File Checks ---
+PASS [T1] R1 = 5
+PASS [T2] R2 = 3
+PASS [T3] R3 = 8
+PASS [T4] R4 = 5
+FAIL [T5] R5 = 3 (0x03)  expected 11 (0x0b)  @ 346000 ns
+PASS [T6] R6 = 11
+
+========================================
+  Testbench Complete @ 346000 ns
+========================================
+
+$finish called at time : 346 ns : File "D:/vivadi_projects/files/armprocessor_tb.v" Line 114

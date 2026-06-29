@@ -58,8 +58,7 @@ if {$::dispatch::connected} {
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param checkpoint.writeSynthRtdsInDcp 1
 set_param general.usePosixSpawnForFork 1
-set_param chipscope.maxJobs 3
-set_param synth.incrementalSynthesisCache {C:/Users/Adithya Linga/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-4240-Adithyapc/incrSyn}
+set_param synth.incrementalSynthesisCache {C:/Users/Adithya Linga/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-4316-Adithyapc/incrSyn}
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
@@ -80,8 +79,14 @@ read_verilog -library xil_defaultlib {
   D:/vivadi_projects/ARM_CPU/ARM_CPU.srcs/sources_1/new/Sram.v
   D:/vivadi_projects/files/arm.v
   D:/vivadi_projects/files/control_unit.v
+  D:/vivadi_projects/files_pipeline/ex_mem_reg.v
   D:/vivadi_projects/files/fetch_stage.v
+  D:/vivadi_projects/files_pipeline/forward_unit.v
+  D:/vivadi_projects/files_pipeline/hazard_unit.v
+  D:/vivadi_projects/files_pipeline/id_ex_reg.v
+  D:/vivadi_projects/files_pipeline/if_id_reg.v
   D:/vivadi_projects/files/instruct_mem_rom.v
+  D:/vivadi_projects/files_pipeline/mem_wb_reg.v
   D:/vivadi_projects/files/program_counter.v
   D:/vivadi_projects/files/register_file.v
   D:/vivadi_projects/files/arm_processor.v

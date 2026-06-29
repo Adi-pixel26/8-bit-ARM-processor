@@ -12,10 +12,16 @@ Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.program_counter
 Compiling module xil_defaultlib.instruct_mem_rom
 Compiling module xil_defaultlib.fetch_stage
+Compiling module xil_defaultlib.if_id_reg
 Compiling module xil_defaultlib.control_unit
 Compiling module xil_defaultlib.register_file
+Compiling module xil_defaultlib.hazard_unit
+Compiling module xil_defaultlib.id_ex_reg
+Compiling module xil_defaultlib.forward_unit
 Compiling module xil_defaultlib.arm
+Compiling module xil_defaultlib.ex_mem_reg
 Compiling module xil_defaultlib.sram
+Compiling module xil_defaultlib.mem_wb_reg
 Compiling module xil_defaultlib.arm_processor
 Compiling module xil_defaultlib.armprocessor_tb
 Compiling module xil_defaultlib.glbl

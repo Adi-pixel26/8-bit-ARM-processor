@@ -4,8 +4,14 @@ verilog xil_defaultlib  --include "../../../../../../vivado/2025.2/Vivado/data/r
 "../../../../../files/arm.v" \
 "../../../../../files/arm_processor.v" \
 "../../../../../files/control_unit.v" \
+"../../../../../files_pipeline/ex_mem_reg.v" \
 "../../../../../files/fetch_stage.v" \
+"../../../../../files_pipeline/forward_unit.v" \
+"../../../../../files_pipeline/hazard_unit.v" \
+"../../../../../files_pipeline/id_ex_reg.v" \
+"../../../../../files_pipeline/if_id_reg.v" \
 "../../../../../files/instruct_mem_rom.v" \
+"../../../../../files_pipeline/mem_wb_reg.v" \
 "../../../../../files/program_counter.v" \
 "../../../../../files/register_file.v" \
 "../../../../../files/armprocessor_tb.v" \
