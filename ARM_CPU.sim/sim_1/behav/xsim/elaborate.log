@@ -21,8 +21,13 @@ Compiling module xil_defaultlib.forward_unit
 Compiling module xil_defaultlib.arm
 Compiling module xil_defaultlib.ex_mem_reg
 Compiling module xil_defaultlib.sram
+Compiling module xil_defaultlib.uart_tx(BAUD_DIV=4)
+Compiling module xil_defaultlib.uart_rx(BAUD_DIV=4)
+Compiling module xil_defaultlib.spi_master(SCK_DIV=2)
+Compiling module xil_defaultlib.i2c_master(CLK_DIV=2)
+Compiling module xil_defaultlib.io_bus(BAUD_DIV=4,SCK_DIV=2,I2C_...
 Compiling module xil_defaultlib.mem_wb_reg
-Compiling module xil_defaultlib.arm_processor
+Compiling module xil_defaultlib.arm_processor(BAUD_DIV=4,SCK_DIV...
 Compiling module xil_defaultlib.armprocessor_tb
 Compiling module xil_defaultlib.glbl
 Built simulation snapshot armprocessor_tb_behav

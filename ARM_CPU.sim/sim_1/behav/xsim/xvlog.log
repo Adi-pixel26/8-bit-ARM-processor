@@ -14,17 +14,27 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadi_projects/files_pipeline/f
 INFO: [VRFC 10-311] analyzing module forward_unit
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadi_projects/files_pipeline/hazard_unit.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module hazard_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadi_projects/files_communication protocols/i2c_master.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module i2c_master
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadi_projects/files_pipeline/id_ex_reg.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module id_ex_reg
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadi_projects/files_pipeline/if_id_reg.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module if_id_reg
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadi_projects/files/instruct_mem_rom.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module instruct_mem_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadi_projects/files_communication protocols/io_bus.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module io_bus
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadi_projects/files_pipeline/mem_wb_reg.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module mem_wb_reg
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadi_projects/files/program_counter.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module program_counter
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadi_projects/files/register_file.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module register_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadi_projects/files_communication protocols/spi_master.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spi_master
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadi_projects/files_communication protocols/uart_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadi_projects/files_communication protocols/uart_tx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_tx
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadi_projects/files/armprocessor_tb.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module armprocessor_tb

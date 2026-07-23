@@ -1,0 +1,13 @@
+# Vivado specific files/folders to ignore
+*.cache/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.sim/
+*.jou
+*.log
+*.str
+
+# Keep the project file and sources
+!*.xpr
+!*.srcs/
